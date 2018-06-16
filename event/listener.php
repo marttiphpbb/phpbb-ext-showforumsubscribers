@@ -49,7 +49,6 @@ class listener implements EventSubscriberInterface
 		$forum_id = $event['forum_id'];
 
 		$count = $this->forum_subscribers->get_count($forum_id);
-		error_log($count);
 		$treshold = $this->config[cnst::ID . '_treshold'];
 
 		if (!$count || $count > $treshold)
@@ -58,8 +57,7 @@ class listener implements EventSubscriberInterface
 		}
 		else
 		{
-			$list = $this->forum_subscribers->get_string($topic_id);
-			error_log($list);
+			$list = $this->forum_subscribers->get_string($forum_id);
 			$list = $this->language->lang(cnst::L . '_LIST', $count, $list);
 		}
 

@@ -33,11 +33,11 @@ class forum_subscribers
 		$this->users_table = $users_table;
 	}
 
-	public function get_count(int $topic_id):int
+	public function get_count(int $forum_id):int
 	{
 		$sql = 'select count(*)
-			from ' . $this->topics_watch_table . '
-			where topic_id = ' . $topic_id;
+			from ' . $this->forums_watch_table . '
+			where forum_id = ' . $forum_id;
 
 		$result = $this->db->sql_query($sql);
 		$count = $this->db->sql_fetchfield('count(*)');
@@ -46,14 +46,14 @@ class forum_subscribers
 		return $count;
 	}
 
-	function get_string(int $topic_id):string
+	function get_string(int $forum_id):string
 	{
 		$users = [];
 
 		$sql = 'select u.username, u.user_id,
 			u.user_type, u.user_colour
-			from ' . $this->users_table . ' u, ' . $this->topics_watch_table . ' w
-			where w.topic_id = ' . $topic_id . '
+			from ' . $this->users_table . ' u, ' . $this->forums_watch_table . ' w
+			where w.forum_id = ' . $forum_id . '
 				and w.user_id = u.user_id
 			order by u.username_clean asc';
 		$result = $this->db->sql_query($sql);
