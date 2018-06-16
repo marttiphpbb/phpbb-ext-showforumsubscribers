@@ -2,7 +2,7 @@
 
 ## Features
 
-* Shows the subscribers of a topic
+* Shows the subscribers of a forum
 * A threshold can be defined in ACP of the maximum number of subscribers to be shown. Above this number only the number is shown. (To be set if there is a  performance issue).
 
 ## Requirements
