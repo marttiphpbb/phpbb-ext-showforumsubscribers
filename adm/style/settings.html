@@ -1,0 +1,33 @@
+{%- include 'overall_header.html' -%}
+
+<h1>
+	{{- lang('ACP_MARTTIPHPBB_SHOWTOPICSUBSCRIBERS_SETTINGS') -}}
+</h1>
+
+<form id="acp_board" method="post" action="{U_ACTION}">
+
+	<fieldset>
+		<dl>
+			<dt>
+				<label for="treshold">
+					{{- lang('ACP_MARTTIPHPBB_SHOWTOPICSUBSCRIBERS_TRESHOLD') -}}
+				</label>
+				<br>
+				<span>
+					{{- lang('ACP_MARTTIPHPBB_SHOWTOPICSUBSCRIBERS_TRESHOLD_EXPLAIN') -}}
+				</span>
+			</dt>
+			<dd>
+				<input type="number" name="treshold" id="treshold" value="{{- TRESHOLD -}}">
+			</dd>
+		</dl>
+	</fieldset>
+
+	<fieldset class="submit-buttons">
+		<input class="button1" type="submit" id="submit" name="submit" value="{{- lang('SUBMIT') -}}">
+	</fieldset>
+
+{{- S_FORM_TOKEN -}}
+</form>
+
+{%- include 'overall_footer.html' -%}
