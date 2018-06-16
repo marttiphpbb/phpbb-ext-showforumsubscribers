@@ -1,17 +1,17 @@
 services:
-    marttiphpbb.showtopicsubscribers.listener:
-        class: marttiphpbb\showtopicsubscribers\event\listener
+    marttiphpbb.showforumsubscribers.listener:
+        class: marttiphpbb\showforumsubscribers\event\listener
         arguments:
             - '@config'
             - '@template'
             - '@language'
-            - '@marttiphpbb.showtopicsubscribers.topic_subscribers'
+            - '@marttiphpbb.showforumsubscribers.forum_subscribers'
         tags:
             - { name: event.listener }
 
-    marttiphpbb.showtopicsubscribers.topic_subscribers:
-        class: marttiphpbb\showtopicsubscribers\service\topic_subscribers
+    marttiphpbb.showforumsubscribers.forum_subscribers:
+        class: marttiphpbb\showforumsubscribers\service\forum_subscribers
         arguments:
             - '@dbal.conn'
-            - '%tables.topics_watch%'
+            - '%tables.forums_watch%'
             - '%tables.users%'

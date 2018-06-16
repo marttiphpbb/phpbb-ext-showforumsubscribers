@@ -1,11 +1,11 @@
 <?php
 /**
-* phpBB Extension - marttiphpbb showtopicsubscribers
-* @copyright (c) 2015 - 2018 marttiphpbb <info@martti.be>
+* phpBB Extension - marttiphpbb showforumsubscribers
+* @copyright (c) 2018 marttiphpbb <info@martti.be>
 * @license GNU General Public License, version 2 (GPL-2.0)
 */
 
-namespace marttiphpbb\showtopicsubscribers\service;
+namespace marttiphpbb\showforumsubscribers\service;
 
 use phpbb\db\driver\factory as db;
 use phpbb\auth\auth;
@@ -14,22 +14,22 @@ use phpbb\controller\helper;
 use phpbb\template\twig\twig as template;
 use phpbb\user;
 use phpbb\language\language;
-use marttiphpbb\showtopicsubscribers\util\cnst;
+use marttiphpbb\showforumsubscribers\util\cnst;
 
-class topic_subscribers
+class forum_subscribers
 {
 	protected $db;
-	protected $topics_watch_table;
+	protected $forums_watch_table;
 	protected $users_table;
 
 	public function __construct(
 		db $db,
-		string $topics_watch_table,
+		string $forums_watch_table,
 		string $users_table
 	)
 	{
 		$this->db = $db;
-		$this->topics_watch_table = $topics_watch_table;
+		$this->forums_watch_table = $forums_watch_table;
 		$this->users_table = $users_table;
 	}
 

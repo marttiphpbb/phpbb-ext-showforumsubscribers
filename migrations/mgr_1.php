@@ -1,14 +1,14 @@
 <?php
 /**
-* phpBB Extension - marttiphpbb showtopicsubscribers
-* @copyright (c) 2015 - 2018 marttiphpbb <info@martti.be>
+* phpBB Extension - marttiphpbb showforumsubscribers
+* @copyright (c) 2018 marttiphpbb <info@martti.be>
 * @license GNU General Public License, version 2 (GPL-2.0)
 */
 
-namespace marttiphpbb\showtopicsubscribers\migrations;
+namespace marttiphpbb\showforumsubscribers\migrations;
 
 use phpbb\db\migration\migration;
-use marttiphpbb\showtopicsubscribers\util\cnst;
+use marttiphpbb\showforumsubscribers\util\cnst;
 
 class mgr_1 extends migration
 {
@@ -34,7 +34,7 @@ class mgr_1 extends migration
 				'acp',
 				cnst::L_ACP,
 				[
-					'module_basename'	=> '\marttiphpbb\showtopicsubscribers\acp\main_module',
+					'module_basename'	=> '\marttiphpbb\showforumsubscribers\acp\main_module',
 					'modes'				=> [
 						'settings',
 					],

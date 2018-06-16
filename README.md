@@ -1,4 +1,4 @@
-# phpBB Extension - marttiphpbb Show Topic Subscribers
+# phpBB Extension - marttiphpbb Show Forum Subscribers
 
 ## Features
 
@@ -14,18 +14,18 @@
 
 You can install this on the latest release of phpBB 3.2 by following the steps below:
 
-* Create `marttiphpbb/showtopicsubscribers` in the `ext` directory.
-* Download and unpack the repository into `ext/marttiphpbb/showtopicsubscribers`
-* Enable `Show Topic Subscribers` in the ACP at `Customise -> Manage extensions`.
+* Create `marttiphpbb/showforumsubscribers` in the `ext` directory.
+* Download and unpack the repository into `ext/marttiphpbb/showforumsubscribers`
+* Enable `Show Forum Subscribers` in the ACP at `Customise -> Manage extensions`.
 
 ## Uninstall
 
-* Disable `Show Topic Subscribers` in the ACP at `Customise -> Extension Management -> Extensions`.
-* To permanently uninstall, click `Delete Data`. Optionally delete the `/ext/marttiphpbb/showtopicsubscribers` directory.
+* Disable `Show Forum Subscribers` in the ACP at `Customise -> Extension Management -> Extensions`.
+* To permanently uninstall, click `Delete Data`. Optionally delete the `/ext/marttiphpbb/showforumsubscribers` directory.
 
 ## Support
 
-* Report bugs and other issues to the [Issue Tracker](https://github.com/marttiphpbb/phpbb-ext-showtopicsubscribers/issues).
+* Report bugs and other issues to the [Issue Tracker](https://github.com/marttiphpbb/phpbb-ext-showforumsubscribers/issues).
 
 ## License
 
