@@ -1,5 +1,7 @@
 # phpBB Extension - marttiphpbb Show Forum Subscribers
 
+[Topic on phpBB.com](https://www.phpbb.com/community/viewtopic.php?f=456&t=2476111)
+
 ## Features
 
 * Shows the subscribers of a forum
@@ -37,6 +39,6 @@ You can install this on the latest release of phpBB 3.2 by following the steps b
 
 ![ACP](doc/acp.png)
 
-### Viewtopic
+### Viewforum
 
 ![List](doc/list.png)
