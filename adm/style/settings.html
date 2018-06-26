@@ -3,6 +3,9 @@
 <h1>
 	{{- lang('ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_SETTINGS') -}}
 </h1>
+<p>
+	{{- lang('ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_SETTINGS_EXPLAIN') -}}
+</p>
 
 <form id="acp_board" method="post" action="{U_ACTION}">
 
@@ -21,6 +24,21 @@
 				<input type="number" name="threshold" id="treshold" value="{{- THRESHOLD -}}">
 			</dd>
 		</dl>
+		<dl>
+			<dt>
+				<label for="latest">
+					{{- lang('ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_LATEST') -}}
+				</label>
+				<br>
+				<span>
+					{{- lang('ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_LATEST_EXPLAIN') -}}
+				</span>
+			</dt>
+			<dd>
+				<input type="number" name="latest" id="latest" value="{{- LATEST -}}">
+			</dd>
+		</dl>
+
 	</fieldset>
 
 	<fieldset class="submit-buttons">

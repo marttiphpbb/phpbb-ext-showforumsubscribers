@@ -20,9 +20,21 @@ $lang = array_merge($lang, [
 
 	'ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_SETTINGS_SAVED'
 		=> 'The settings have been saved successfully!',
+	'ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_SETTINGS_EXPLAIN'
+		=> 'In case of a performance issue it might be useful to
+		limit the visualisation of the forum subscribers.',
 	'ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_THRESHOLD'
 		=> 'Threshold number',
 	'ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_THRESHOLD_EXPLAIN'
-		=> 'Above this number of forum subscribers, only the
-		number is shown and not the usernames.',
+		=> 'When this number of forum subscribers is exceeded, only the
+		total count number is shown and not the usernames.',
+	'ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_LATEST'
+		=> 'Show latest forum subscribers up to',
+	'ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_LATEST_EXPLAIN'
+		=> 'This number of latest forum
+		subscribers are shown in order of subscription (latest last).
+		When this setting is zero or negative, all forum subscriber
+		usernames are shown alphabetically. In both cases,
+		the threshold setting overrules. When the threshold is exceeded,
+		only the total count number of subscribers is shown.',
 ]);
