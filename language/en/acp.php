@@ -28,13 +28,4 @@ $lang = array_merge($lang, [
 	'ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_THRESHOLD_EXPLAIN'
 		=> 'When this number of forum subscribers is exceeded, only the
 		total count number is shown and not the usernames.',
-	'ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_LATEST'
-		=> 'Show latest forum subscribers up to',
-	'ACP_MARTTIPHPBB_SHOWFORUMSUBSCRIBERS_LATEST_EXPLAIN'
-		=> 'This number of latest forum
-		subscribers are shown in order of subscription (latest last).
-		When this setting is zero or negative, all forum subscriber
-		usernames are shown alphabetically. In both cases,
-		the threshold setting overrules. When the threshold is exceeded,
-		only the total count number of subscribers is shown.',
 ]);

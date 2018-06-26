@@ -23,7 +23,6 @@ class mgr_3 extends migration
 	{
 		return [
 			['config.remove', [cnst::ID . '_treshold']],
-			['config.add', [cnst::ID . '_latest', 20]],
 		];
 	}
 }

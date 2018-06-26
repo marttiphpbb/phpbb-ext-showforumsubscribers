@@ -8,12 +8,6 @@
 namespace marttiphpbb\showforumsubscribers\service;
 
 use phpbb\db\driver\factory as db;
-use phpbb\auth\auth;
-use phpbb\config\db as config;
-use phpbb\controller\helper;
-use phpbb\template\twig\twig as template;
-use phpbb\user;
-use phpbb\language\language;
 use marttiphpbb\showforumsubscribers\util\cnst;
 
 class forum_subscribers
@@ -46,7 +40,7 @@ class forum_subscribers
 		return $count;
 	}
 
-	function get_string(int $forum_id):string
+	public function get_string(int $forum_id):string
 	{
 		$users = [];
 

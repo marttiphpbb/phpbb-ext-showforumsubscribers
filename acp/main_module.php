@@ -39,7 +39,6 @@ class main_module
 					}
 
 					$config->set(cnst::ID . '_threshold', $request->variable('threshold', 0));
-					$config->set(cnst::ID . '_latest', $request->variable('latest', 0));
 
 					trigger_error($language->lang(cnst::L_ACP . '_SETTINGS_SAVED') . adm_back_link($this->u_action));
 				}
@@ -47,7 +46,6 @@ class main_module
 				$template->assign_vars([
 					'U_ACTION'	=> $this->u_action,
 					'THRESHOLD'	=> $config[cnst::ID . '_threshold'],
-					'LATEST'	=> $config[cnst::ID . '_latest'],
 				]);
 
 				break;
